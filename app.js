@@ -19,6 +19,6 @@ app.use((req,res,next)=>{
 })
 app.use((error,req,res,next)=>{
     res.status(error.status || 500);
-    res.send('Server Works')
+    res.send('<html><h1>Server Works</h1></html>')
 })
 module .exports = app;
